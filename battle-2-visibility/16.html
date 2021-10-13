@@ -1,0 +1,39 @@
+<div class="a"></div>
+<div class="b"></div>
+<style>
+  body {
+    background: #0B2429;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .a {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 45px solid #F3AC3C;
+    z-index: 2;
+    background: #0B2429;
+  }
+  .a::after {
+    position: absolute;
+    left: -65px;
+    top: -65px;
+    content: '';
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 20px solid #0B2429;
+  }
+  .b {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #998235;
+    transform: rotate(45deg);
+    border-radius: 50% 0;
+  }
+</style>
