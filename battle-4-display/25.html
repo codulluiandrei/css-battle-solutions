@@ -1,0 +1,39 @@
+<div class="main">
+    <div class="a-ma b c"></div>
+    <div class="a-ma d e f"></div>
+    <div class="a-mi b e f"></div>
+    <div class="a-mi d c"></div>
+  </div>
+  <style>
+    body {
+      background: #998235;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main { 
+      width: 180px; 
+      height: 180px;
+      position: relative;
+    }
+    .b { top: 0 }
+    .d { bottom: 0 }
+    .e { right: 0 }
+    .c { left: 0 }
+    .f { transform: scaleX(-1) }
+    .a-ma, .a-mi {
+      position: absolute;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    .a-ma {
+      width: 80px;
+      height: 100px;
+      background: #1A4341;
+    }
+    .a-mi {
+      width: 80px;
+      height: 60px;
+      background: #F3AC3C;
+    }
+  </style>

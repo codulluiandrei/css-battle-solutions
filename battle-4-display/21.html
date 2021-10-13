@@ -1,0 +1,43 @@
+<div class="main">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<div class="main inv">
+    <div class="a"></div>
+    <div class="b"></div>
+</div>
+<style>
+    body {
+        background: #222;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 148px;
+        top: 76px;
+    }
+    .a {
+        width: 30px;
+        height: 100px;
+        background: #F2994A;
+border-bottom-left-radius: 10px;
+    }
+    .b {
+        width: 60px;
+        height: 30px;
+        background: #F2994A;
+        border-top-right-radius: 5px;
+        margin-top: -30px;
+        margin-left: 20px;
+    }
+    .main.inv {
+        transform: scale(-1, -1) rotate(45deg);
+        top: 124px;
+        left: 170.5px;
+    }
+    .inv .a, .inv .b {
+        background: #2D9CDB;
+    }
+</style>

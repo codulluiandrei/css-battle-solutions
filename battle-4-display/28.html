@@ -1,0 +1,59 @@
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="b"></div>
+<style>
+  body {
+    background: #1A4341;
+  }
+  .a {
+    position: absolute;
+    top: 90px;
+    left: 70px;
+    width: 50px;
+    height: 50px;
+    background: #998235;
+   	border-radius: 50%;
+  }
+  .a:nth-child(1) {
+    left: 280px;
+    background: #F3AC3C;
+  }
+  .a:nth-child(2) {
+	top: 160px;
+    left: 140px;
+  }
+  .a:nth-child(3) {
+    top: 160px;
+    left: 210px;
+    background: #F3AC3C;
+  }
+  .b {
+    position: absolute;
+    top: 90px;
+    left: 140px;
+    width: 50px;
+    height: 50px;
+    background: #F3AC3C;
+    border-radius: 50% 50% 0 0;
+  }
+  .b:nth-child(5) {
+    left: 210px;
+    background: #998235;
+  }
+  .b:nth-child(6) {
+    top: 160px;
+    left: 70px;
+    border-radius: 0 0 50% 50%;
+  }
+  .b:nth-child(7) {
+    top: 160px;
+    left: 280px;
+    background: #998235;
+    border-radius: 0 0 50% 50%;
+  }
+</style>
