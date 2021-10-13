@@ -1,0 +1,38 @@
+<div class="c"></div>
+<div class="a">
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+</div>
+<div class="c"></div>
+<style>
+  body {
+    background: #1A4341;
+  }
+  .a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 180px;
+    margin: 60px auto;
+  }
+  .a .b {
+    height: 20px;
+    background: #F3AC3C;
+  }
+  .c {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background: #1A4341;
+    border-radius: 50%;
+  }
+  .c:nth-child(3) {
+    left: auto;
+    right: -150px;
+  }
+</style>
