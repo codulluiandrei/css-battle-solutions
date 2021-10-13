@@ -1,0 +1,71 @@
+<div class="fn">
+    <div class="is-cerc"></div>
+    <div class="is-cerc marg"></div>
+    <div class="is-cerc marg"></div>
+    <div class="is-cerc marg"></div>
+</div>
+<div class="g"></div>
+<div class="fn in">
+    <div class="ij-cerc marg"></div>
+    <div class="ij-cerc marg"></div>
+    <div class="ij-cerc marg"></div>
+</div>
+<div class="f"></div>
+<div class="bt"></div>
+
+<style>
+  body {
+    padding: 42px 122px 0;
+    background: #6592CF;
+  }
+  .fn {
+    font-size: 0;
+    width: 140px;
+    height: 20px;
+  }
+  .in {
+    background: #060F55;
+  }
+  .marg {
+    margin-left: 20px;
+  }
+  .g {
+    width: 140px;
+    height: 70px;
+    background: repeating-linear-gradient(
+      to right,
+      #060F55 0px,
+      #060F55 20px,
+      #6592CF 20px,
+      #6592CF 40px);
+  }
+  .f {
+    width: 140px;
+    height: 90px;
+    background: #060F55;
+    border-radius: 0 0 100px 100px;
+  }
+  .is-cerc {
+    width: 20px;
+    height: 20px;
+    background: #060F55;
+    border-radius: 20px 20px 0 0;
+    display: inline-block;
+  }
+  .ij-cerc {
+    width: 20px;
+    height: 20px;
+    background: #6592CF;
+    border-radius: 0 0 20px 20px;
+    display: inline-block;
+  }
+  .bt {
+    width: 20px;
+    height: 60px;
+    z-index: 1;
+    position: relative;
+    top: -10px;
+    background: #060F55;
+    margin-left: 60px;
+  }
+</style>

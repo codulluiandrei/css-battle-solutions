@@ -1,0 +1,38 @@
+<div class="col">
+    <div class="cerc"></div>
+</div>
+<div class="col">
+    <div class="cerc"></div>
+</div>
+<div class="col">
+    <div class="cerc"></div>
+</div>
+
+<style>
+    body {
+        padding: 42px 30px 30px 42px;
+        font-size: 0px;
+        background: #62306D;
+    }
+    .col {
+        width: 100px;
+        height: 150px;
+        display: inline-block;
+        background: #F7EC7D;
+        border-radius: 50px 50px 0 0;
+    }
+    .col:nth-child(2) {
+        height: 250px;
+    }
+    .cerc {
+        width: 60px;
+        height: 60px;
+        border: 20px solid #AA445F;
+        background: #E38F66;
+        border-radius: 50%;
+    }
+    .col:nth-child(2) .cerc {
+        background: #AA445F;
+        border-color: #E38F66;
+    }
+</style>
