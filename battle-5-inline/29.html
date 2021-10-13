@@ -1,0 +1,37 @@
+<div class="main">
+    <p a></p>
+    <p b></p>
+    <p c></p>
+    <p d></p>
+  </div>
+  <style>
+    body {
+      background: #F3AC3C;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main {
+      width: 200px;
+      height: 200px;
+      background: #1A4341;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    p {
+      width: 100px;
+      height: 100px;
+      background: #F3AC3C;
+      margin: 0;
+      border-radius: 0 0 100px 0;
+    }
+    [b] {
+      border-radius: 0 0 0 100px;
+    }
+    [c] {
+      border-radius: 0 100px 0 0;
+    }
+    [d] {
+      border-radius: 100px 0 0 0;
+    }
+  </style>
