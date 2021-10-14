@@ -1,0 +1,79 @@
+<div class="a"></div>
+<div class="b c1"></div>
+<div class="b c2 "></div>
+<div class="b c3"></div>
+<div class="b c4"></div>
+<div class="b c5"></div>
+<div class="b c6"></div>
+<div class="b c7"></div>
+<style>
+  body {
+    background: #6592CF;
+  }
+  .a, .b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .a {
+    width: 40px;
+    height: 40px;
+    background: #EEB850;
+    border-radius: 50%;
+    transform: translate(-170px, -30px);
+  }
+  .a:after {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: #EEB850;
+    border-radius: 50%;
+    transform: translateX(90px);
+  }
+  .a:before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background: #EEB850;
+    border-radius: 50%;
+    transform: translate(35px, -20px);
+  }
+  .b {
+    width: 10px;
+    height: 43px;
+    background: #243D83;
+  }
+  .b:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #243D83;
+    transform: translate(-5px, -17px)
+  }
+  .c1 {
+    transform: translate(-155px, -3px);
+  }
+  .c2 {
+    transform: translate(-110px, -3px);
+  }
+  .c3 {
+    transform: translate(-65px, -3px);
+  }
+  .c4 {
+    transform: translate(10px, -3px);
+  }
+  .c5 {
+    transform: translate(55px, -3px);
+  }
+  .c6 {
+    transform: translate(100px, -3px);
+  }
+  .c7 {
+    transform: translate(145px, -3px);
+  }
+</style>
