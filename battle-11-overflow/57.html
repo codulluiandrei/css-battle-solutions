@@ -1,0 +1,48 @@
+<div class="a">
+    <div class="b"></div>
+</div>
+<div class="c">
+    <div class="d"></div>
+</div>
+<style>
+    body {
+        background: #191919;
+    }
+    .a, .d {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        -webkit-box-reflect: below;
+    }
+    .a > .b {
+        width: 55px;
+        height: 55px;
+        background: -webkit-radial-gradient(10px 10px, circle, #191919 30px, #4F77FF 25px);
+        -webkit-box-reflect: right -0.7px;
+    }
+    .c {
+        position: absolute;
+        top: 120px;
+        left: 170px;
+        background: #F9E492;
+        -webkit-box-reflect: below 60px;
+    }
+    .c:after {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -45px;
+        left: -45px;
+        background: #4F77FF;
+        border-radius: 30px;
+        -webkit-box-reflect: right 90px;
+    }
+    .c > .d {
+        width: 45px;
+        height: 45px;
+        background: #F9E492;
+        border-radius: 30px;
+        -webkit-box-reflect: right 60px;
+    }
+</style>
