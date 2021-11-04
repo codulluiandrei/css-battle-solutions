@@ -1,0 +1,45 @@
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="a"></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="b"></div>
+<style>
+  body {
+    background: #191919;
+  }
+  .a {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 1000px;
+    height: 40px;
+    background: linear-gradient(to right, #191919 50px, #5DBCF9 50px, #5DBCF9 203px, #191919 150px, #191919 355px, #5DBCF9 30px);
+  }
+  .a:nth-child(2) {
+    top: 80px;
+    background: linear-gradient(to right, #5DBCF9 50px, #191919 50px, #191919 203px, #5DBCF9 150px, #5DBCF9 355px, #191919 30px);
+  }
+  .a:nth-child(3) {
+    top: 180px;
+    background: linear-gradient(to right, #191919 50px, #5DBCF9 50px, #5DBCF9 203px, #191919 150px, #191919 355px, #5DBCF9 30px);
+  }
+  .a:nth-child(4) {
+    top: 230px;
+    background: linear-gradient(to right, #5DBCF9 50px, #191919 50px, #191919 203px, #5DBCF9 150px, #5DBCF9 355px, #191919 30px);
+  }
+  .b {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    width: 10px;
+    height: 1000px;
+    background: #5DBCF9;
+    -webkit-box-reflect: right 140px;
+    -webkit-box-reflect: right 290px;
+  }
+  .b:nth-child(6) {
+    left: 195px;
+  }
+</style>
