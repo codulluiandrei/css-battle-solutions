@@ -1,0 +1,89 @@
+<div class="a">
+  <div class="a"></div>
+</div>
+<div class="b"></div>
+<div class="c"></div>
+<div class="d"></div>
+<div class="e"></div>
+<style>
+  * {
+    background: #998235;
+  }
+  .a {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    width: 80px;
+    height: 180px;
+    background: #1A4341;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-reflect: right 140px;
+  }
+  .a > .a {
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    width: 80px;
+    height: 180px;
+    background: #0B2429;
+    border-radius: 50%;
+  }
+  .b {
+    position: absolute;
+    top: 60px;
+    left: 110px;
+    height: 180px;
+    width: 180px;
+    background: #1A4341;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .c {
+    position: absolute;
+    top: 190px;
+    left: 140px;
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 20px solid white;
+    border-radius: 50%;
+    border-left-style: solid;
+    border-left-width: 20px; 
+    border-left-color: transparent;
+    border-bottom-width: 20px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    transform: rotate(-45deg);
+  }
+  .d {
+    position: absolute;
+    top: 180px;
+    left: 180px;
+    height: 200px;
+    width: 40px;
+    background: #0B2429;
+    border-radius: 250px;
+  }
+  .e {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    width: 20px;
+    height: 10px;
+    background: #0B2429;
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-right-color: #998235;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: #998235;
+    border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: #998235;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    transform: rotate(180deg);
+    -webkit-box-reflect: left 20px;
+  }
+</style>
