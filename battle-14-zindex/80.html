@@ -1,0 +1,57 @@
+<div class="a">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<div class="b">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<style>
+  body, div {
+    background:#998235;
+    position: fixed;
+  }
+  .a {
+    top: 100px;
+    left: 110px;
+    padding-top: 25px;
+    height: 75px;
+    width: 180px;
+    border-radius: 10px;
+	background: #191919;
+    display: flex;
+  }
+  .a > span {
+    height: 70px;
+    width: 20px;
+    margin-left: 5px;
+    background: #FFFFFF;
+    border-radius: 5px;
+  }
+  .b {
+    top: 120px;
+    left: 130px;
+    background: transparent;
+    display: flex;
+  }
+  .b > span {
+    height: 40px;
+    width: 15px;
+    margin-right: 10px;
+    background: #191919;
+  }
+  .b > span:nth-child(3) {
+    width: 15px;
+    background: transparent;
+  }
+</style>
