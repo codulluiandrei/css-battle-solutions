@@ -1,0 +1,102 @@
+<div class="a">
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="d"></div>
+  <div class="e"></div>
+</div>
+<style>
+  body {
+    background: #4F77FF;
+  }
+  .a {
+    position :relative;
+    top: 42px;
+    left: 92px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #191919;
+    overflow: hidden;
+  }
+  .b {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F9E492;
+  }
+  .c {
+    position: absolute;
+    background: #F9E492;
+    top: 148px;
+    width: 100px;
+    height: 16px;
+  }
+  .c:after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    width: 100px;
+    height: 16px;
+    background: #F9E492;
+  }
+  .c:before {
+    content: '';
+    position: absolute;
+    top: -26px;
+    width: 100px;
+    height: 16px;
+    background: #F9E492;
+  }
+  .d {
+    position: absolute;
+    top: 134.5px;
+    right: -20px;
+    width: 100px;
+    height: 16px;
+    background: #F9E492;
+  }
+  .d:after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    width: 100px;
+    height: 16px;
+    background: #F9E492;
+  }
+  .d:before {
+    content: '';
+    position: absolute;
+    top: -26px;
+    width: 100px;
+    height: 16px;
+    background: #F9E492;
+  }
+  .e {
+    position: absolute;
+    top: 141px;
+    right: 80px;
+    height: 16px;
+    width: 20px;
+    background: #D6B73F;
+    transform: skewY(-33.5deg);
+  }
+  .e:after {
+    content: '';
+    position: absolute;
+    top: 26px;
+    width: 20px;
+    height: 16px;
+    background: #D6B73F;
+  }
+  .e:before {
+    content: '';
+    position: absolute;
+    top: -26px;
+    width: 20px;
+    height: 16px;
+    background: #D6B73F;
+  }
+</style>

@@ -1,0 +1,35 @@
+<div class="a"></div>
+<div class="b"></div>
+<style>
+  body {
+    background: #191919;
+  } div, div:after {
+    content: '';
+    position: absolute;
+  }
+  .a {
+    background: #f9e492;
+    border-radius: 50%;
+    top: 50px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+  }
+  .b {
+    top: 234px;
+    transform: translateY(-50%);
+    left: 50px;
+    width: 300px;
+    height: 150px;
+    background: #4f77ff;
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  }
+  .b::after {
+    left: 50px;
+    top: -109px;
+    width: 200px;
+    height: 200px;    
+    background: #191919;
+    border-radius: 100%;
+  }
+</style>
