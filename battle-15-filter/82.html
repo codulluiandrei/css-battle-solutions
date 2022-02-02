@@ -1,0 +1,54 @@
+<div class="a">
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+</div>
+<style>
+  body {
+    background: #F3AC3C;
+  }
+  .a {
+    height: 100%;
+    margin-left: -5px;
+    transform: rotate(45deg);
+  }
+  .b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .b:nth-child(1) {
+    width: 160px;
+    height: 160px;
+    background: #998235;
+  }
+  .b:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    background: #F3AC3C;
+  }
+  .b:nth-child(2):after {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    content: '';
+    background: #F3AC3C;
+    top: 50%;
+    transform: translate(-75%, -50%);
+  }
+  .b:nth-child(2):before {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    content: '';
+    background: #F3AC3C;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  .b:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    background: #1A4341;
+  }
+</style>

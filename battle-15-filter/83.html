@@ -1,0 +1,46 @@
+<div class="a">
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+</div>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    background: #243D83;
+    justify-content: center;
+  }
+  .a {
+    display: grid;
+    place-items: center;
+  }
+  .b {
+    width: 100px;
+    height: 50px;
+    background: #6592CF;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    grid-area: 1/1;
+  }
+  .b:nth-child(1) {
+    transform: rotate(-45deg) translateY(-85px);
+  }
+  .b:nth-child(2) {
+    transform: rotate(45deg) translateY(-85px);
+  }
+  .b:nth-child(3) {
+    transform: rotate(135deg) translateY(-85px);
+  }
+  .b:nth-child(4) {
+    transform: rotate(-135deg) translateY(-85px);
+  }
+  .c {
+    width: 60px;
+    height: 60px;
+    background: #EEB850;
+    border-radius: 100%;
+    grid-area: 1/1;
+  }
+</style>
