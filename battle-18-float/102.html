@@ -1,0 +1,73 @@
+<div class="a"></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c"></div>
+<div class="c"></div>
+<div class="c"></div>
+<div class="c"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="d"></div>
+<div class="e"></div>
+<div class="e"></div>
+<style>
+  div { position: absolute; }
+  body { background: #000; }
+  .a {
+    top: 110px;
+    left: 125px;
+    width: 150px;
+    height: 100px;
+    border-radius: 50px;
+    background: #fff;
+  }
+  .b {
+    top: 220px;
+    left: 173px;
+    width: 15px;
+    height: 20px;
+    background: #fff;
+  }
+  .b:nth-child(2) { left: 193px; -webkit-box-reflect: right 5px; }
+  .c {
+    top: 94px;
+    left: 109px;
+    width: 20px;
+    height: 30px;
+    transform: rotate(-45deg);
+    background: #fff;
+  }
+  .c:nth-child(4) { left: 270px; transform: rotate(45deg); }
+  .c:nth-child(5) { top: 194px; left: 109px; transform: rotate(45deg); }
+  .c:nth-child(6) { top: 194px; left: 270px; }
+  .d {
+	top: 95px;
+    left: 95px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .d:nth-child(8) { top: 85px; left: 105px; }
+  .d:nth-child(9) { left: 280px; }
+  .d:nth-child(10) { top: 85px; left: 270px; }
+  .d:nth-child(11) { top: 200px; }
+  .d:nth-child(12) { top: 210px; left: 105px; }
+  .d:nth-child(13) { top: 210px; left: 270px; }
+  .d:nth-child(14) { top: 200px; left: 280px; }
+  .e {
+    width: 50px;
+    height: 40px;
+    top: 140px;
+    left: 145px;
+    transform: rotate(-30deg);
+    border-radius:50%;
+    background: #000;
+  }
+  .e:nth-child(16) { left: 205px; transform: rotate(30deg); }
+</style>
